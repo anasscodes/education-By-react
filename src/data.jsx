@@ -44,7 +44,7 @@ export const coursesData = [
     },
     {
         id: 2,
-        img: "/website.jpg",
+        img: "/PHP.jpg",
         department: "Development",
         title: "Full-Stack Web Development",
         rating: "4.7",
@@ -69,5 +69,35 @@ export const coursesData = [
         discount: "$3.99",
         duration: "18 hrs 15min",
         lessons: "12 Lessons",      
+    },
+];
+
+export const ratingData = [
+    {
+        id: 1,
+        stars: "★★★★★",
+        img: "/sarah.jpg",
+        description:
+            "This course exceeded my expectations! The content was well-structured and the instructors were knowledgeable. Highly recommend to anyone looking to enhance their skills.",
+        name: "Sarah L.",
+        occupation: "Graphic Designer",
+    },
+    {
+        id: 2,
+        stars: "★★★★☆",
+        img: "/james.avif",
+        description:
+            "Great course with practical examples. I appreciated the hands-on approach and the real-world projects. It helped me land a job in web development!",
+        name: "James K.",
+        occupation: "Web Developer",
+    },
+    {
+        id: 3,
+        stars: "★★★★★",
+        img: "/emly.jpg",
+        description:
+            "The Digital Marketing Mastery course was a game-changer for my career. The strategies I learned have already made a significant impact on my business.",
+        name: "Emily R.",
+        occupation: "Marketing Specialist",
     },
 ];

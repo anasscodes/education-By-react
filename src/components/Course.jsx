@@ -22,6 +22,7 @@ function Course({ img, department, title, rating, description, sales, price, dis
             <div className="course-info">
                 <p> <IoMdAlarm />{duration}</p>
                 <p> <FaBookOpen />{lessons}</p>
+                <br />
                 <a href="#" className="btn-learn">Learn More <FaChevronRight /> </a>
             </div>
         </div>

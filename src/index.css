@@ -218,19 +218,233 @@ p {
 #courses {
     padding: 7rem 0;
 }
-#courses .section-header h2{
+ .section-header h2{
  font-size: 35px;
  margin: 15px 0;
  color: var(--dark-blue);
 }
 
-#courses .section-header p {
+ .section-header p {
     color: var(--Light-gray);
     line-height: 1.6;
 }
 
+#courses .courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding: 0 1rem;
+    
+}
+#courses .courses-container .course img {
+    width: 100%;
+    height: 220px;        /* 👈 بلاصة ثابتة للصورة */
+    object-fit: cover;   /* 👈 تعمر البلاصة مزيان */
+    display: block;
+    
+}
+#courses .courses-container .course {
+    position: relative;
+    width: 400px;
+    height: 520px; /* 👈 مهم: نفس الطول لجميع الكروت */
+    /* background-color: #1a1a1a; */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#courses .courses-container .course .sale {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--red);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+#courses .courses-container .course .content {
+  flex: 1; /* 👈 ياخذ المساحة المتبقية */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--Light-gray);
+}
+
+
+#courses .courses-container .course .content .course-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#courses .courses-container .course .content .course-field  .department {
+   color: var(--sky-blue);
+    font-weight: 600;
+}
+#courses .courses-container .course .content .course-field  .rating {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#courses .courses-container .course .content .course-field  .rating svg {
+   color: var(--yellow);
+
+}
+
+#courses .courses-container .course .course-info {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#courses .courses-container .course .course-info p svg {
+    vertical-align: middle;
+    margin-right: 3px;
+    color: var(--sky-blue);
+    font-size: 16px;
+}
+#courses .courses-container .course .content .btn-learn {
+    background-color: var(--sky-blue);
+    color: white;
+    padding: 9px 9px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+     border: 1px solid transparent; /* 👈 مهم بزاف */
+}
+#courses .courses-container .course .content .btn-learn:hover {
+     background-color: transparent;
+    color: var(--sky-blue);
+    border-color: var(--sky-blue); /* 👈 غير كنبدلو اللون */
+}
+
 /* courses */
 
+/* reviews */
+#reviews {
+    padding: 7rem 0;
+}
+#reviews .ratings .rating {
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 👈 المهم */
+    min-height: 420px; /* 👈 نفس الطول لكل card */
+}
+#reviews .ratings{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    padding: 0 1rem;    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#reviews .ratings .rating  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    position: relative;
+    display: block;
+    margin-right: 12px;
+     flex-shrink: 0; /* 👈 ما تتضغطش */
+}
+#reviews .ratings .rating .stars {
+    color: var(--yellow);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#reviews .ratings .rating .description {
+    color: var(--Light-gray);
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#reviews .ratings .rating .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+/* reviews */
+
+/* JOIN US */
+#join-us {
+    background-color: var(--dark-blue);
+    padding: 6rem 0;
+}
+#join-us .content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+#join-us .content h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+#join-us .content p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+#join-us .content form {
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    position: relative;
+} 
+#join-us .content form input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 12px;
+}
+#join-us .content form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    background-color: var(--sky-blue);
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+#join-us .content form button:hover {
+    background-color: var(--Light-sky-blue);
+    color: var(--dark-blue);
+}
+
+
+
+/* JOIN US */
 
 /* MAIN */
          /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
