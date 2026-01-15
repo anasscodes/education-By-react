@@ -10,7 +10,7 @@ return (
                 <p>Access a wide range of courses and resources to enhance your skills and knowledge.
                     join our community of learners today!
                 </p>
-                <a href="#" className="btn btn-red ">Get Started</a>
+                <a href="#courses" className="btn btn-red ">Get Started</a>
                 <a href="#" className="btn btn-transparent ">Learn More </a>
             </div>
             <div className="card-container">

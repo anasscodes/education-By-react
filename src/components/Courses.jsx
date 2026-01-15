@@ -6,7 +6,7 @@ import SectionHeader from "./SectionHeader"
 
 function Courses() {
   return (
-    <section id='courses'>
+    <section  id='courses'>
     <div className="container">
         <SectionHeader  title="Make Online education acessible" 
         description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

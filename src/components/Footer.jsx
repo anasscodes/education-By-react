@@ -25,13 +25,13 @@ return (
                     <h2>Company Info</h2>
                     <ul>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="#home">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Careers</a>
+                            <a href="#courses">Careers</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#join-us">Contact</a>
                         </li>
                     </ul>
                 </div>
